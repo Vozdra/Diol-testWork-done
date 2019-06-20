@@ -1,0 +1,59 @@
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px)
+  /**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .main-content .products .product
+    width: 25%
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  html
+    font-size: 18px
+  .container
+    width: 720px
+    .main-content
+      .products .product
+        width: 50%
+        .prod-count
+          width: 12rem
+          height: 3.6rem
+      .filters
+        flex-direction: column
+        align-items: flex-start
+        .count-filter
+          margin: 0.7rem 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .container
+    width: 540px
+    .nav-breadcrumbs ul
+      display: flex
+      flex-wrap: wrap
+    .main-content
+      .filters .count-filter
+        flex-direction: column
+        #sets + label
+          margin: 0.3rem 0
+      .products .product
+        width: 100%
+        .price, .name, .desc
+          height: auto
+    .nav-footer
+      flex-wrap: wrap
+      p
+        margin: 0 0.4rem
+      .back
+        order: 0
+      .num-page
+        order: 2
+        margin-top: 15px
+      .next
+        order: 1
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  .container
+    width: 290px
